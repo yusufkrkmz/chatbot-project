@@ -1,0 +1,122 @@
+const questions = [
+    {
+        id: 1,
+        text: "İzin talebini nasıl oluşturabilirim?",
+        answer: "İnsan Kaynakları portalına girerek 'İzin Yönetimi' bölümünden izin türünü seçip, talebinizi onaya gönderebilirsiniz.",
+        keywords: ["izin", "talep", "başvuru", "insan kaynakları"],
+    },
+    {
+        id: 2,
+        text: "Kalan izin günlerimi nereden kontrol edebilirim?",
+        answer: "Kalan izin bakiyenizi İK sistemindeki 'İzin Bakiyesi' sekmesinden veya İK biriminden öğrenebilirsiniz.",
+        keywords: ["izin", "bakiye", "kaç gün", "kalan"],
+    },
+    {
+        id: 3,
+        text: "Şirket hesabımın şifresini nasıl sıfırlayabilirim?",
+        answer: "Şifre sıfırlamak için BT destek portalına girip 'Şifremi Unuttum' seçeneğini kullanarak talimatları izleyin.",
+        keywords: ["şifre", "sıfırla", "unut", "hesap"],
+    },
+    {
+        id: 4,
+        text: "Kişisel bilgilerimi sistemde nasıl güncelleyebilirim?",
+        answer: "Çalışan profili sekmesinden gerekli bilgileri güncelleyebilir, bazı değişiklikler için İK onayı gerekebilir.",
+        keywords: ["güncelle", "bilgi", "kişisel", "profil"],
+    },
+    {
+        id: 5,
+        text: "Uzaktan çalışma politikası nedir?",
+        answer: "Belirlenen günlerde, yöneticinin onayıyla uzaktan çalışma mümkündür. Ayrıntılar için şirket politikasını inceleyin.",
+        keywords: ["uzaktan", "çalışma", "evden", "politika"],
+    },
+    {
+        id: 6,
+        text: "Toplantı odası nasıl rezerve edilir?",
+        answer: "Toplantı odalarını şirket intraneti veya rezervasyon sistemi üzerinden ayırtabilirsiniz.",
+        keywords: ["toplantı", "oda", "rezervasyon", "ayır"],
+    },
+    {
+        id: 7,
+        text: "Teknik bir sorun yaşarsam ne yapmalıyım?",
+        answer: "BT destek ekibine destek portalı üzerinden talep oluşturabilir veya e-posta gönderebilirsiniz.",
+        keywords: ["teknik", "sorun", "BT", "destek"],
+    },
+    {
+        id: 8,
+        text: "Seyahat talebini nasıl oluşturabilirim?",
+        answer: "Seyahat taleplerinizi 'Seyahat Yönetim Sistemi' üzerinden tarih ve gerekçenizi belirterek yöneticinizin onayına sunabilirsiniz.",
+        keywords: ["seyahat", "talep", "iş", "onay"],
+    },
+    {
+        id: 9,
+        text: "Şirket politikalarına nereden ulaşabilirim?",
+        answer: "Şirket politikaları çalışan el kitabı veya intranet üzerindeki 'Politikalar' sekmesinde bulunmaktadır.",
+        keywords: ["şirket", "politika", "kural", "el kitabı"],
+    },
+    {
+        id: 10,
+        text: "Maaşım ile ilgili bir sorun yaşarsam ne yapmalıyım?",
+        answer: "Maaş sorunlarıyla ilgili İnsan Kaynakları veya Muhasebe departmanı ile iletişime geçebilirsiniz.",
+        keywords: ["maaş", "problem", "bordro", "sorun"],
+    },
+    {
+        id: 11,
+        text: "Masraf geri ödemesi için nasıl başvurabilirim?",
+        answer: "Masraf belgelerinizi 'Finans Portalı' üzerinden yükleyerek iade talebinde bulunabilirsiniz.",
+        keywords: ["masraf", "geri ödeme", "talep", "finans"],
+    },
+    {
+        id: 12,
+        text: "Şirket yan hakları hakkında kime danışabilirim?",
+        answer: "İnsan Kaynakları Yan Haklar ekibi ile e-posta yoluyla veya İK portalı üzerinden iletişime geçebilirsiniz.",
+        keywords: ["yan haklar", "sigorta", "İK", "faydalar"],
+    },
+    {
+        id: 13,
+        text: "Bir arkadaşımı açık pozisyonlar için nasıl önerebilirim?",
+        answer: "Çalışan öneri programı kapsamında, işe alım sistemine aday bilgilerini girerek referans olabilirsiniz.",
+        keywords: ["iş", "referans", "öner", "aday"],
+    },
+    {
+        id: 14,
+        text: "Performans değerlendirmemi nereden görebilirim?",
+        answer: "Performans değerlendirmeleri İK sisteminin 'Performans Yönetimi' sekmesinde mevcuttur.",
+        keywords: ["performans", "değerlendirme", "geri bildirim"],
+    },
+    {
+        id: 15,
+        text: "Uzaktan çalışma için BT ekipmanı talep edebilir miyim?",
+        answer: "BT destek portalı üzerinden uzaktan çalışma ekipmanları için talepte bulunabilirsiniz.",
+        keywords: ["BT", "ekipman", "talep", "uzaktan"],
+    },
+    {
+        id: 16,
+        text: "İşten ayrılma süreci nasıl işler?",
+        answer: "İstifanızı İK sistemine girerek yöneticinize bildirmeniz ve belirlenen çıkış sürecini takip etmeniz gerekir.",
+        keywords: ["istifa", "ayrılma", "süreç", "çıkış"],
+    },
+    {
+        id: 17,
+        text: "Eğitim veya mesleki gelişim kurslarına nasıl başvurabilirim?",
+        answer: "Öğrenme ve Gelişim portalı üzerinden ilgili kurslara başvurabilirsiniz.",
+        keywords: ["eğitim", "gelişim", "kurs", "sertifika"],
+    },
+    {
+        id: 18,
+        text: "Bordromu ve vergi belgelerimi nereden alabilirim?",
+        answer: "Maaş ve vergi belgelerinizi çalışan portalı üzerindeki 'Bordro' sekmesinden görüntüleyebilirsiniz.",
+        keywords: ["bordro", "maaş", "vergi", "belge"],
+    },
+    {
+        id: 19,
+        text: "Şirketin sunduğu avantajları ve indirimleri nereden öğrenebilirim?",
+        answer: "Çalışan yan hakları ve indirimler, şirket intranetinde 'Yan Haklar' bölümünde listelenmiştir.",
+        keywords: ["avantaj", "indirim", "yan hak", "fırsatlar"],
+    },
+    {
+        id: 20,
+        text: "Acil durum irtibat bilgilerimi nasıl güncelleyebilirim?",
+        answer: "Acil durum iletişim bilgilerinizi İK portalındaki 'Kişisel Bilgiler' sekmesinden güncelleyebilirsiniz.",
+        keywords: ["acil", "iletişim", "güncelle", "yakın"],
+    }
+];
