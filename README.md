@@ -1,16 +1,17 @@
- Chatbot Project
+# Chatbot Project
+
 This project is a simple, category-based chatbot web application developed using HTML, CSS, and JavaScript. It allows users to ask questions within predefined categories and receive appropriate responses instantly through an interactive interface.
 
-🚀 Features
-🧠 Predefined questions and answers by category
+## 🚀 Features
 
-💬 Interactive and responsive chatbot UI
+- 🧠 Predefined questions and answers by category  
+- 💬 Interactive and responsive chatbot UI  
+- 🛠️ Fully customizable structure  
+- ⚡ Lightweight and fast — no backend required  
 
-🛠️ Fully customizable structure
+## 📁 Project Structure
 
-⚡ Lightweight and fast — no backend required
-
-📁 Project Structure
+```
 chatbot-project/
 │
 ├── index.html         # Main HTML file
@@ -19,16 +20,27 @@ chatbot-project/
 ├── categories.js      # Category definitions
 ├── questions.js       # Q&A data
 └── img/               # Image assets
-📦 Getting Started
+```
+
+## 📦 Getting Started
+
 To run the project locally:
 
-Clone the repository:
-git clone https://github.com/yusufkrkmz/chatbot-project.git
-Navigate into the project folder:
-cd chatbot-project
-Open index.html with your preferred browser.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yusufkrkmz/chatbot-project.git
+   ```
+
+2. Navigate into the project folder:
+   ```bash
+   cd chatbot-project
+   ```
+
+3. Open `index.html` with your preferred browser.
 
 That’s it — your chatbot should now be fully functional in your browser!
 
-🤝 Contributing
+## 🤝 Contributing
+
 Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
+
